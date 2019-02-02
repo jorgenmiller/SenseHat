@@ -1,16 +1,15 @@
 from sense_hat import SenseHat
+import time
 
 sense = SenseHat()
 sense.clear()
 
-p = round(sense.get_pressure(), 1)
-t = round(sense.get_temperature(), 1)
-h = round(sense.get_humidity(), 1)
-
 def get_environment_data():
-    environment_data = [p, t, h]
+    environment_data = [round(sense.get_pressure(), 1), round(sense.get_temperature(), 1), round(sense.get_humidity(), 1)]
     return environment_data
+
+print(["pressure", "temperature", "humidity"])
 
 while True:
     print get_environment_data()
-    wait = input()
+    time.sleep(.1)
