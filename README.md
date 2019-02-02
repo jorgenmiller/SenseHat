@@ -11,7 +11,7 @@ sudo apt-get install sense-hat
 placed at `/usr/src/sense-hat`
 
 ## Calibration
-Required for magnetometer, but optional for accelerometer.
+Required for magnetometer, but optional for accelerometer
 ```
 sudo apt-get update
 sudo apt-get install octave -y
@@ -21,11 +21,11 @@ cd RTEllipsoidFit
 RTIMULibCal
 ```
 
-Remove the original calibration:
+Remove the original and implement the new calibration
 
 ```
 rm ~/.config/sense_hat/RTIMULib.ini
-sudo cp RTIMULib.ini /etc
+sudo cp ~/RTEllipsoidFit/RTIMULib.ini /etc
 ```
 
 ## Usage in Python
