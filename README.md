@@ -21,8 +21,6 @@ cd RTEllipsoidFit
 RTIMULibCal
 ```
 
-Calibrate every option.  
-
 Remove the original calibration:
 
 ```
