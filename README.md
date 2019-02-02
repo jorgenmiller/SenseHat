@@ -5,7 +5,9 @@ Adafruit's [Raspberry Pi Sense HAT](https://www.adafruit.com/product/2738)
 
 
 ## Install Library
-`sudo apt-get install sense-hat`  
+```
+sudo apt-get install sense-hat
+```
 placed at `/usr/src/sense-hat`
 
 ## Calibration
